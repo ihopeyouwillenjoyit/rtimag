@@ -1,0 +1,640 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="7707806" data-tilda-page-id="38925176" data-tilda-page-alias="rtimag" data-tilda-formskey="c2b9c9fde8ea8e6137f5e43a27707806" data-tilda-cookie="no" data-tilda-lazy="yes" ><div id="rec629280357" class="r t-rec" style=" " data-animationappear="off" data-record-type="446" ><!-- T446 --><div id="nav629280357marker"></div><div class="tmenu-mobile" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__text t-name t-name_md" field="menu_mob_title">РТИ МАГ</div><button type="button" 
+class="t-menuburger t-menuburger_first " 
+aria-label="Навигационное меню" 
+aria-expanded="false"><span style="background-color:#ffffff;"></span><span style="background-color:#ffffff;"></span><span style="background-color:#ffffff;"></span><span style="background-color:#ffffff;"></span></button><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger') &&
+!burger.closest('.t199__js__menu-toggler')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('629280357');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+padding: 0;
+border: none;
+background-color: transparent;
+outline: none;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: transform .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec629280357 .tmenu-mobile {
+background-color: #151c66;
+}
+#rec629280357 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><div id="nav629280357" class="t446 t446__positionabsolute tmenu-mobile__menucontent_hidden" style="background-color: rgba(255,255,255,1); height:135px; " data-bgcolor-hex="#ffffff" data-bgcolor-rgba="rgba(255,255,255,1)" data-navmarker="nav629280357marker" data-appearoffset="" data-bgopacity-two="" data-menushadow="" data-bgopacity="1" data-menu-items-align="center" data-menu="yes" ><div class="t446__maincontainer t446__c12collumns" style="height:135px;"><div class="t446__logowrapper"><div class="t446__logowrapper2"><div style="display: block;"><a href="http://tilda.cc" style="color:#ffffff;font-weight:600;"><img class="t446__imglogo t446__imglogomobile" 
+src="images/tild3131-6637-4234-a362-373564313034__c_dbdylymam.jpg" 
+imgfield="img" 
+style="max-width: 120px; width: 120px;"
+alt="ЛОГОТИП "
+></a></div></div></div><div class="t446__leftwrapper" style="padding-left:20px; padding-right:110px; text-align: left;"><div class="t446__leftmenuwrapper"><ul class="t446__list t-menu__list"><li class="t446__list_item" style="padding:0 15px 0 0;"><a class="t-menu__link-item" href="#about" data-menu-submenu-hook="" style="color:#151c62;font-size:20px;" data-menu-item-number="1">О нас</a></li><li class="t446__list_item" style="padding:0 15px;"><a class="t-menu__link-item" href="#service" data-menu-submenu-hook="" style="color:#151c62;font-size:20px;" data-menu-item-number="2">Услуги</a></li><li class="t446__list_item" style="padding:0 15px;"><a class="t-menu__link-item" href="#contact" data-menu-submenu-hook="" style="color:#151c62;font-size:20px;" data-menu-item-number="3">Контакты</a></li><li class="t446__list_item" style="padding:0 0 0 15px;"><a class="t-menu__link-item" href="katalog" data-menu-submenu-hook="" style="color:#151c62;font-size:20px;" data-menu-item-number="4">Каталог</a></li></ul></div></div><div class="t446__rightwrapper" style="padding-right:20px; padding-left:110px; text-align: right;"><div class="t446__rightmenuwrapper"><ul class="t446__list t-menu__list"></ul></div><div class="t446__additionalwrapper"><div class="t446__right_descr" style="color:#151b64;font-size:20px;"><p style="text-align: left;">Телефон: +7 (977) 991-59-18</p></div></div></div></div></div><style>@media screen and (max-width: 980px) {
+#rec629280357 .t446__leftcontainer {
+padding: 20px;
+}
+#rec629280357 .t446__imglogo {
+padding: 20px 0;
+}
+#rec629280357 .t446 {
+position: static;
+}
+}</style><script>t_onReady(function () {
+t_onFuncLoad('t446_checkOverflow', function () {
+window.addEventListener('resize', t_throttle(function () {
+t446_checkOverflow('629280357', '135');
+}));
+window.addEventListener('load', function () {
+t446_checkOverflow('629280357', '135');
+});
+t446_checkOverflow('629280357', '135');
+});
+t_onFuncLoad('t_menu__interactFromKeyboard', function () {
+t_menu__interactFromKeyboard('629280357');
+});
+});
+t_onReady(function() {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t446__list_item a');
+});
+});
+t_onReady(function () {
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('629280357', '.t446');
+window.addEventListener('resize', t_throttle(function () {
+t_menu__setBGcolor('629280357', '.t446');
+}));
+});
+});</script><script>t_onReady(function () {
+t_onFuncLoad('t446_createMobileMenu', function () {
+t446_createMobileMenu('629280357');
+});
+t_onFuncLoad('t446_init', function () {
+t446_init('629280357');
+});
+});</script><style>#rec629280357 .t-menu__link-item{
+position: relative;
+}
+#rec629280357 .t-menu__link-item:not(.t-active):not(.tooltipstered)::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: 20%;
+opacity: 0;
+width: 100%;
+height: 100%;
+border-bottom: 1px solid #ffffff;
+-webkit-box-shadow: inset 0px -1px 0px 0px #ffffff;
+-moz-box-shadow: inset 0px -1px 0px 0px #ffffff;
+box-shadow: inset 0px -1px 0px 0px #ffffff;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+#rec629280357 .t-menu__link-item:not(.t-active):not(.tooltipstered):hover::after,
+#rec629280357 .t-menu__link-item:not(.t-active):not(.tooltipstered):focus-visible::after{
+opacity: 1;
+bottom: -1px; }
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec629280357 .t-menu__link-item,
+#rec629280357 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style><!--[if IE 8]><style>#rec629280357 .t446 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9ffffff', endColorstr='#D9ffffff');
+}</style><![endif]--></div><div id="rec629280358" class="r t-rec" style=" " data-animationappear="off" data-record-type="18" ><!-- cover --><div class="t-cover"
+id="recorddiv629280358"
+bgimgfield="img"
+style="height:100vh; background-image:url('images/tild6530-6639-4162-b033-666337373464__-__resize__20x__gshte51bexe.jpg');"
+><div class="t-cover__carrier" id="coverCarry629280358"data-content-cover-id="629280358"data-content-cover-bg="images/tild6530-6639-4162-b033-666337373464__gshte51bexe.jpg"data-display-changed="true"data-content-cover-height="100vh"data-content-cover-parallax="dynamic"style="height:100vh;background-attachment:scroll; background-position:center bottom;"itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6530-6639-4162-b033-666337373464__gshte51bexe.jpg"></div><div class="t-cover__filter" style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.60));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.60));background-image: -o-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.60));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.60));background-image: linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.60));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66000000', endColorstr='#66000000');"></div><div class="t-container"><div class="t-col t-col_12 "><div class="t-cover__wrapper t-valign_middle" style="height:100vh;"><div class="t001 t-align_center"><div class="t001__wrapper" data-hook-content="covercontent"><div class="t001__title t-title t-title_xl t-animate" data-animate-style="fadeindown" data-animate-group="yes" style="color:#ffffff;font-size:65px;" field="title">Резино-технические изделия для сантехники ООО «МАГ»</div><div class="t001__descr t-descr t-descr_xl t001__descr_center t-animate" data-animate-style="fadeinup" data-animate-group="yes" style="color:#ffffff;" field="descr">Предприятие гарантирует клиенту получение качественной продукции в приемлемые сроки и по доступным ценам</div><span class="space"></span></div></div></div></div></div><!-- arrow --><div class="t-cover__arrow"><div class="t-cover__arrow-wrapper t-cover__arrow-wrapper_animated"><div class="t-cover__arrow_mobile"><svg role="presentation" class="t-cover__arrow-svg" style="fill:#e6e6e6;" x="0px" y="0px" width="38.417px" height="18.592px" viewBox="0 0 38.417 18.592" style="enable-background:new 0 0 38.417 18.592;"><g><path d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z"/></g></svg></div></div></div><!-- arrow --></div></div><div id="rec629280359" class="r t-rec" style=" " data-record-type="215" ><a name="about" style="font-size:0;"></a></div><div id="rec629280360" class="r t-rec t-rec_pt_180 t-rec_pb_180" style="padding-top:180px;padding-bottom:180px;background-color:#ffffff; " data-animationappear="off" data-record-type="480" data-bg-color="#ffffff"><!-- T480 --><div style="width: 0; height: 0; overflow: hidden;"><div class="t480__sizer t-col t-col_6" data-auto-correct-mobile-width="false" style="height:550px;"></div></div><div class="t480"><div class="t-container"><div class="t480__top t480__col t-col t-col_6 " itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6435-3232-4332-b063-303266343637__factory.gif"> <div class="t480__blockimg t-bgimg t-animate" data-original="images/tild6435-3232-4332-b063-303266343637__factory.gif" 
+bgimgfield="img" data-animate-style="fadeinright" data-animate-group="yes" data-animate-order="1" 
+style="background-image:url('images/tild6435-3232-4332-b063-303266343637__-__resizeb__20x__factory.gif'); height:550px;"
+></div></div><div class="t480__col t-col t-col_6 "><div class="t480__textwrapper t-align_center" style="height:550px;"><div class="t480__content t-valign_middle"><div class="t480__title t-title t-title_xs t-margin_auto" field="title" style="">О нашей компании</div><div class="t480__uptitle t-descr t-descr_xs t-margin_auto" field="subtitle" style="color:#b61522;font-size:18px;max-width:400px;">#Качество#Надежность#ДоступныеЦены</div><div class="t480__line t-margin_auto" style="background-color: #000000;"></div><div class="t480__descr t-descr t-descr_md t-margin_auto" field="descr" style="">Наше предприятие предлагает комплексное решение вопросов, связанных с проектированием и изготовлением всевозможных изделий из пластмасс и резины с учетом требований заказчика.<br />Имеется свой цех металлообработки и порошковой окраски.<br /><br />Предприятие гарантирует клиенту получение качественной продукции в приемлемые сроки и по доступным ценам. </div></div></div></div></div></div><script>t_onReady(function() {
+t_onFuncLoad('t480_init', function() {
+t480_init('629280360');
+});
+});</script></div><div id="rec629280361" class="r t-rec" style=" " data-record-type="215" ><a name="service" style="font-size:0;"></a></div><div id="rec629280362" class="r t-rec t-rec_pt_90 t-rec_pb_90" style="padding-top:90px;padding-bottom:90px;background-color:#ededed; " data-record-type="30" data-bg-color="#ededed"><!-- T015 --><div class="t015"><div class="t-container t-align_center"><div class="t-col t-col_8 t-prefix_2"><div class="t015__title t-title t-title_lg t-animate" data-animate-style="fadeinright" data-animate-group="yes" field="title" style="color:#151c62;font-size:52px;font-family:'TildaSans';letter-spacing:1.5px;">Наши услуги </div> </div></div></div></div><div id="rec629280363" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px;background-color:#ededed; " data-record-type="117" data-bg-color="#ededed"><!-- T106 --><div class="t106"><div class="t-container t-card__container"><div class="t106__wrapper t-card__col t-card__col_withoutbtn"><div class="t106__block" style="background-color:#ffffff;"><div class="t106__title t-title t-title_xxs" style="color:#151c62;" field="title" >Профессиональная сварка</div><div class="t106__text t-text" style="" field="text" ></div></div><div class="t106__block"><img src="images/tild3538-3561-4832-b035-643766333162__-__empty__svarochnyie-rabotyi-.jpg" data-original="images/tild3538-3561-4832-b035-643766333162__svarochnyie-rabotyi-.jpg" 
+class="t106__img t-img" 
+imgfield="img"
+alt=""></div></div></div></div><script type="text/javascript">t_onReady(function() {
+t_onFuncLoad('t106_init', function () {
+t106_init('629280363');
+});
+});</script></div><div id="rec629677431" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px;background-color:#ededed; " data-record-type="117" data-bg-color="#ededed"><!-- T106 --><div class="t106"><div class="t-container t-card__container"><div class="t106__wrapper t-card__col t-card__col_withoutbtn"><div class="t106__block" style="background-color:#151c62;"><div class="t106__title t-title t-title_xxs" style="color:#ffffff;" field="title" >Порошковая покраска</div><div class="t106__text t-text" style="" field="text" ></div></div><div class="t106__block"><img src="images/tild6439-6462-4237-b031-306534363736__-__empty__poroshkovaya-pokrask.jpg" data-original="images/tild6439-6462-4237-b031-306534363736__poroshkovaya-pokrask.jpg" 
+class="t106__img t-img" 
+imgfield="img"
+alt=""></div></div></div></div><script type="text/javascript">t_onReady(function() {
+t_onFuncLoad('t106_init', function () {
+t106_init('629677431');
+});
+});</script></div><div id="rec629280365" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px;background-color:#ededed; " data-record-type="117" data-bg-color="#ededed"><!-- T106 --><div class="t106"><div class="t-container t-card__container"><div class="t106__wrapper t-card__col t-card__col_withoutbtn"><div class="t106__block" style="background-color:#ffffff;"><div class="t106__title t-title t-title_xxs" style="color:#151c62;" field="title" >Производство изделий по чертежам</div><div class="t106__text t-text" style="" field="text" ></div></div><div class="t106__block"><img src="images/tild3764-3062-4366-b962-616466343337__-__empty__690958eb842fdb849bf5.jpg" data-original="images/tild3764-3062-4366-b962-616466343337__690958eb842fdb849bf5.jpg" 
+class="t106__img t-img" 
+imgfield="img"
+alt=""></div></div></div></div><script type="text/javascript">t_onReady(function() {
+t_onFuncLoad('t106_init', function () {
+t106_init('629280365');
+});
+});</script></div><div id="rec629300610" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px;background-color:#ededed; " data-record-type="117" data-bg-color="#ededed"><!-- T106 --><div class="t106"><div class="t-container t-card__container"><div class="t106__wrapper t-card__col t-card__col_withoutbtn"><div class="t106__block" style="background-color:#151c62;"><div class="t106__title t-title t-title_xxs" style="color:#ffffff;" field="title" >Разработка чертежей и технической документации</div><div class="t106__text t-text" style="" field="text" ></div></div><div class="t106__block"><img src="images/tild3434-3561-4733-a638-653763303239__-__empty__preimush-2-295.jpg" data-original="images/tild3434-3561-4733-a638-653763303239__preimush-2-295.jpg" 
+class="t106__img t-img" 
+imgfield="img"
+alt=""></div></div></div></div><script type="text/javascript">t_onReady(function() {
+t_onFuncLoad('t106_init', function () {
+t106_init('629300610');
+});
+});</script></div><div id="rec629300632" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px;background-color:#ededed; " data-record-type="117" data-bg-color="#ededed"><!-- T106 --><div class="t106"><div class="t-container t-card__container"><div class="t106__wrapper t-card__col t-card__col_withoutbtn"><div class="t106__block" style="background-color:#ffffff;"><div class="t106__title t-title t-title_xxs" style="color:#151c62;" field="title" >Изготовление изделий из пластмасс и резины</div><div class="t106__text t-text" style="" field="text" ></div></div><div class="t106__block"><img src="images/tild6131-3763-4639-b632-326332386232__-__empty__manufacture.jpg" data-original="images/tild6131-3763-4639-b632-326332386232__manufacture.jpg" 
+class="t106__img t-img" 
+imgfield="img"
+alt=""></div></div></div></div><script type="text/javascript">t_onReady(function() {
+t_onFuncLoad('t106_init', function () {
+t106_init('629300632');
+});
+});</script></div><div id="rec629280366" class="r t-rec t-rec_pt_75 t-rec_pb_75" style="padding-top:75px;padding-bottom:75px;background-color:#ededed; " data-record-type="209" data-bg-color="#ededed"><!-- T185 --><div class="t185"><div class="t-container t-container_flex"><div class="t-col t-col_flex t-col_4 t-prefix_4"><div class="t-text t-text_lg" style="color:#151c66;" field="text">Ознакомьтесь с прайс-листом:</div></div><div class="t185__butwrapper t-col t-col_1 "><a href="/katalog" target="_blank" class="t-btn t-btn_md t-animate" data-animate-style="zoomin" data-animate-group="yes" data-animate-order="2" data-animate-delay="0.3" style="color:#ffffff;background-color:#151c62;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);" data-btneffects-first="btneffects-flash"><table role="presentation" style="width:100%; height:100%;"><tr><td>Каталог</td></tr></table></a></div></div></div><style>@media (hover), (min-width:0\0) {
+#rec629280366 .t-btn:not(.t-animate_no-hover):hover,
+#rec629280366 .t-btn:not(.t-animate_no-hover):focus-visible {
+background: #b61522 !important;
+box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5) !important; }
+#rec629280366 .t-btn:not(.t-animate_no-hover){
+-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#rec629280366 .t-btntext:not(.t-animate_no-hover):hover{
+}
+}</style><style>#rec629280366 .t-btn[data-btneffects-first],
+#rec629280366 .t-btn[data-btneffects-second],
+#rec629280366 .t-btn[data-btneffects-third],
+#rec629280366 .t-submit[data-btneffects-first],
+#rec629280366 .t-submit[data-btneffects-second],
+#rec629280366 .t-submit[data-btneffects-third] {
+position: relative;
+overflow: hidden;
+isolation: isolate;
+}
+#rec629280366 .t-btn[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects,
+#rec629280366 .t-submit[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+-webkit-transform: translateX(-85px);
+-ms-transform: translateX(-85px);
+transform: translateX(-85px);
+-webkit-animation-name: flash;
+animation-name: flash;
+-webkit-animation-duration: 3s;
+animation-duration: 3s;
+-webkit-animation-timing-function: linear;
+animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+}
+#rec629280366 .t-btn[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects_md,
+#rec629280366 .t-submit[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects_md {
+-webkit-animation-name: flash-md;
+animation-name: flash-md;
+}
+#rec629280366 .t-btn[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects_lg,
+#rec629280366 .t-submit[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects_lg {
+-webkit-animation-name: flash-lg;
+animation-name: flash-lg;
+}
+#rec629280366 .t-btn[data-btneffects-first="btneffects-flash"] .t-btn_effects,
+#rec629280366 .t-submit[data-btneffects-first="btneffects-flash"] .t-btn_effects {
+background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, .1)), to(rgba(255, 255, 255, .4)));
+background: -webkit-linear-gradient(left, rgba(255, 255, 255, .1), rgba(255, 255, 255, .4));
+background: -o-linear-gradient(left, rgba(255, 255, 255, .1), rgba(255, 255, 255, .4));
+background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .4));
+width: 45px;
+height: 100%;
+position: absolute;
+top: 0;
+left: 30px;
+-webkit-transform: skewX(-45deg);
+-ms-transform: skewX(-45deg);
+transform: skewX(-45deg);
+}
+@-webkit-keyframes flash {
+20% {
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+}
+100% {
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+}
+}
+@keyframes flash {
+20% {
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+}
+100% {
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+}
+}
+@-webkit-keyframes flash-md {
+30% {
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+}
+100% {
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+}
+}
+@keyframes flash-md {
+30% {
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+}
+100% {
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+}
+}
+@-webkit-keyframes flash-lg {
+40% {
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+}
+100% {
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+}
+}
+@keyframes flash-lg {
+40% {
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+}
+100% {
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+}
+}</style><script>t_onReady(function() {
+var rec = document.getElementById('rec629280366');
+if (!rec) return;
+var firstButton = rec.querySelectorAll('.t-btn[data-btneffects-first], .t-submit[data-btneffects-first]');
+Array.prototype.forEach.call(firstButton, function (button) {
+button.insertAdjacentHTML('beforeend', '<div class="t-btn_wrap-effects"><div class="t-btn_effects"></div></div>');
+var buttonEffect = button.querySelector('.t-btn_wrap-effects');
+if (button.offsetWidth > 230) {
+buttonEffect.classList.add('t-btn_wrap-effects_md');
+}
+if (button.offsetWidth > 750) {
+buttonEffect.classList.remove('t-btn_wrap-effects_md');
+buttonEffect.classList.add('t-btn_wrap-effects_lg');
+}
+});
+});</script></div><div id="rec629280367" class="r t-rec t-rec_pt_90 t-rec_pb_90" style="padding-top:90px;padding-bottom:90px; " data-record-type="491" ><!-- t491 --><div class="t491"><div class="t-section__container t-container"><div class="t-col t-col_12"><div class="t-section__topwrapper t-align_center"><div class="t-section__title t-title t-title_xs" field="btitle"><span style="color: rgb(21, 28, 102);">Почему мы?</span></div> </div></div></div><div class="t491__container t-card__container t-container"><div class="t-card__col t-card__col_withoutbtn t491__col t-col t-col_3 t-item"><div class="t491__content"><div class="t491__wrapper"><img class="t491__img t-img" 
+src="images/tild3032-3831-4065-a132-373566623331__-__empty__engineer.gif" data-original="images/tild3032-3831-4065-a132-373566623331__engineer.gif" 
+imgfield="li_img__1476976310929"
+style="width:100px;" alt=""><div class="t-card__title t-name t-name_sm" field="li_title__1476976310929" style="color:#151c66;font-size:20px;font-family:'TildaSans';" >Длительный опыт работы</div></div><div class="t-card__descr t-descr t-descr_xs" field="li_descr__1476976310929" style="color:#151c66;font-size:16px;" >ООО «МАГ» образовано в 1996 году и успешно производит продукцию по настоящее время</div></div></div><div class="t-card__col t-card__col_withoutbtn t491__col t-col t-col_3 t-item"><div class="t491__content"><div class="t491__wrapper"><img class="t491__img t-img" 
+src="images/tild3036-6266-4031-a165-386537623666__-__empty__thumbs-up.gif" data-original="images/tild3036-6266-4031-a165-386537623666__thumbs-up.gif" 
+imgfield="li_img__1476976315081"
+style="width:100px;" alt=""><div class="t-card__title t-name t-name_sm" field="li_title__1476976315081" style="color:#151c66;font-size:20px;font-family:'TildaSans';" >Высокая надежность </div></div><div class="t-card__descr t-descr t-descr_xs" field="li_descr__1476976315081" style="color:#151c66;font-size:16px;" >Мы гарантируем клиенту получение качественной продукции</div></div></div><div class="t-card__col t-card__col_withoutbtn t491__col t-col t-col_3 t-item"><div class="t491__content"><div class="t491__wrapper"><img class="t491__img t-img" 
+src="images/tild3038-3165-4565-a164-633663303034__-__empty__cost.gif" data-original="images/tild3038-3165-4565-a164-633663303034__cost.gif" 
+imgfield="li_img__1476976330452"
+style="width:100px;" alt=""><div class="t-card__title t-name t-name_sm" field="li_title__1476976330452" style="color:#151c66;font-size:20px;font-family:'TildaSans';" >Цена и сроки</div></div><div class="t-card__descr t-descr t-descr_xs" field="li_descr__1476976330452" style="color:#151c66;font-size:16px;" >Помимо высокого качества продукции мы гарантируем доступные цены и маленькие сроки выполнения заказа</div></div></div><div class="t-card__col t-card__col_withoutbtn t491__col t-col t-col_3 t-item"><div class="t491__content"><div class="t491__wrapper"><img class="t491__img t-img" 
+src="images/tild6232-3731-4730-b261-366433623135__-__empty__delivery-truck.gif" data-original="images/tild6232-3731-4730-b261-366433623135__delivery-truck.gif" 
+imgfield="li_img__1692379926115"
+style="width:100px;" alt=""><div class="t-card__title t-name t-name_sm" field="li_title__1692379926115" style="color:#151c66;font-size:20px;font-family:'TildaSans';" >Доставка</div></div><div class="t-card__descr t-descr t-descr_xs" field="li_descr__1692379926115" style="color:#151c66;font-size:16px;" >Мы доставляем продукцию по Москве и Московской области</div></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t491_init', function () {
+t491_init('629280367');
+});
+});</script></div><div id="rec629280368" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="215" ><a name="contact" style="font-size:0;"></a></div><div id="rec631462721" class="r t-rec t-rec_pt_75 t-rec_pb_30" style="padding-top:75px;padding-bottom:30px;background-color:#151c66; " data-record-type="572" data-bg-color="#151c66"><!-- t572 --><div class="t572"><div class="t-section__container t-container"><div class="t-col t-col_12"><div class="t-section__topwrapper t-align_center"><div class="t-section__title t-title t-title_xs" field="btitle"><div style="font-size: 52px;" data-customstyle="yes"><strong style="color: rgb(255, 255, 255);">КОНТАКТЫ</strong></div></div> <div class="t-section__descr t-descr t-descr_xl t-margin_auto" field="bdescr"><div style="font-size: 20px;" data-customstyle="yes"><p style="text-align: center;"><span style="color: rgb(255, 255, 255);">М.О., г. Подольск, микрорайон Львовский, пр-д Металлургов, д. 9</span></p><p style="text-align: center;"><span style="color: rgb(255, 255, 255);">ИНН 5021009099, КПП 502101001</span></p><p style="text-align: center;"><strong style="color: rgb(255, 255, 255);">Телефон:</strong><span style="color: rgb(255, 255, 255);">&nbsp;+7 (977) 991-59-18</span></p><p style="text-align: center;"><strong style="color: rgb(255, 255, 255);">Email:</strong><span style="color: rgb(255, 255, 255);">&nbsp;rtimag2010@yandex.ru</span></p></div></div> </div></div></div><div class="t572__container t-container"><div class="t-col t-col_12 t-align_center"> </div> </div></div></div></div><!--/allrecords-->
